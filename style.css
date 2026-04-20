@@ -1,0 +1,98 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* ===== MAIN TITLE ===== */
+h1 {
+    text-align: center;
+    background: #1f2a38;
+    color: white;
+    padding: 25px;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* ===== SECTIONS AS CARDS ===== */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== SUBHEADINGS ===== */
+h2 {
+    color: #1f2a38;
+    border-left: 5px solid #27ae60;
+    padding-left: 10px;
+}
+
+/* ===== TEXT ===== */
+p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Bible verse numbers */
+sup {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Strong emphasis (Jeremiah verse) */
+strong {
+    color: #c0392b;
+}
+
+/* ===== LINK BUTTON ===== */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #219150;
+}
+
+/* ===== IMAGE ===== */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== AUDIO & VIDEO ===== */
+audio, video {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}

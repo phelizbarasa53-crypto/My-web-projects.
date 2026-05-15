@@ -36,13 +36,19 @@
     <p>This small space is for someone very special to me.</p>
     <p>Everything here is written honestly, from the heart.</p>
   </div>
-  <audio id="music" loop>
+  <button onclick="playMusic()">
+  🎵 Play Music
+</button>
+
+<audio id="music" loop>
   <source src="song.mp3" type="audio/mpeg">
 </audio>
 
-<button onclick="document.getElementById('music').play()">
-  ▶ Play Music
-</button>
+<script>
+function playMusic() {
+  document.getElementById("music").play();
+}
+</script>
 <footer>
   <p>Made with ❤️ just for you.</p>
 </footer>

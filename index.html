@@ -1,100 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
 
-  <!-- SEO -->
-  <title>Pheliz Tech | Future Software Engineer</title>
+<meta name="description" content="A heartfelt website created with love, memories, and meaningful words.">
 
-  <meta name="description"
-        content="Pheliz Tech is a modern tech portfolio showcasing software engineering, web development, and future technology projects.">
+<meta name="keywords" content="love, memories, romantic website, heartfelt message">
 
-  <meta name="keywords"
-        content="software engineer, web developer, portfolio, HTML, CSS, JavaScript, tech">
+<meta name="author" content="Pheliz">
 
-  <meta name="author"
-        content="Pheliz">
+<meta property="og:title" content="For Someone Special ❤️">
 
-  <!-- Open Graph (Social Media Preview) -->
-  <meta property="og:title"
-        content="Pheliz Tech">
+<meta property="og:description" content="A heartfelt website filled with emotions, memories, and love.">
 
-  <meta property="og:description"
-        content="Future Software Engineer building modern technology projects.">
+<meta property="og:type" content="website">
 
-  <meta property="og:type"
-        content="website">
-
-  <meta property="og:image"
-        content="images/preview.jpg">
-
-  <meta property="og:url"
-        content="https://yourwebsite.com">
-
-  <!-- Twitter Preview -->
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <meta name="twitter:title"
-        content="Pheliz Tech">
-
-  <meta name="twitter:description"
-        content="Modern portfolio website for software engineering and tech projects.">
-
-  <link rel="stylesheet" href="style.css">
+<meta property="og:image" content="photo1.jpg-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+
 <body>
-    <header>
-
-  <h1>Pheliz Tech</h1>
   <nav>
-  <ul class="nav-links">
-    <li><a class="active" href="index.html">Contact</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-  </header>
-  <main>
+    <a href="index.html">Home</a>
+    <a href="feelings.html">My Feelings</a>
+    <a href="absence.html">When You're Away</a>
+    <a href="investment.html">My Effort</a>
+  </nav>
 
-  <section class="hero">
+  <div class="container">
+    <h1>Welcome ❤️</h1>
+    <p>This small space is for someone very special to me.</p>
+    <p>Everything here is written honestly, from the heart.</p>
+  </div>
+  <audio id="music" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
 
-    <h2>Future Software Engineer</h2>
-
-    <p>
-      Building modern websites, learning software engineering,
-      and exploring future technologies.
-    </p>
-
-    <button onclick="window.location.href='projects.html'">
-  Explore Projects
+<button onclick="document.getElementById('music').play()">
+  ▶ Play Music
 </button>
-
-  </section>
-
-  <section>
-
-    <h2>Welcome</h2>
-
-    <p>
-      Welcome to Pheliz Tech — a growing portfolio focused on
-      software engineering, web development, and innovation.
-    </p>
-
-  </section>
-
-</main>
 <footer>
-
-  <p>
-    © 2026 Pheliz Tech. All rights reserved.
-  </p>
-
+  <p>Made with ❤️ just for you.</p>
 </footer>
+  <script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "❤️";
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+setInterval(createHeart, 300);
+  </script>
 </body>
 </html>

@@ -104,3 +104,12 @@ footer {
   background: rgba(0,0,0,0.2);
   font-size: 14px;
 }
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #ff4d6d;
+  font-weight: bold;
+  cursor: pointer;
+}

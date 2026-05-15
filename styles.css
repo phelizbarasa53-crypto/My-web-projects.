@@ -1,100 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
-  padding: 20px;
-}
+  background-color: #0f172a;
+  color: white;
 
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
+  font-family: Arial, sans-serif;
 
-h2 {
-  font-size: 30px;
+  line-height: 1.6;
 }
+header {
+  display: flex;
 
-.established {
-  font-style: italic;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background-color: #111827;
 }
+header h1 {
+  color: #38bdf8;
 
-h1, h2, p {
-  text-align: center;
+  font-size: 28px;
 }
+nav a {
+  color: white;
 
-.menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
-}
+  text-decoration: none;
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-margin-top: -25px;  
-}
+  margin-left: 20px;
 
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
-}
-
-.bottom-line {
-  margin-top: 25px;
-}
-
-h1, h2 {
-  font-family: Impact, serif;
-}
-
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
   font-size: 18px;
+
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #38bdf8;
+}
+.hero {
+  text-align: center;
+
+  padding: 120px 20px;
+}
+.hero h2 {
+  font-size: 55px;
+
+  margin-bottom: 20px;
 }
 
-.flavor, .dessert {
-  text-align: left;
-  width: 75%;
+.hero p {
+  font-size: 20px;
+
+  color: #cbd5e1;
+
+  margin-bottom: 30px;
 }
+button {
+  background-color: #38bdf8;
 
-.price {
-  text-align: right;
-  width: 25%;
+  color: white;
+
+  border: none;
+
+  padding: 15px 30px;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
 }
+button:hover {
+  background-color: #0ea5e9;
 
-/* FOOTER */
-
+  transform: scale(1.05);
+}
+section {
+  padding: 60px 40px;
+}
 footer {
-  font-size: 14px;
-}
+  text-align: center;
 
-address {
-  font-style: normal;
-}
+  padding: 20px;
 
-.address {
-  margin-bottom: 5px;
-}
+  background-color: #111827;
 
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
+  margin-top: 50px;
 }

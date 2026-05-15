@@ -1,98 +1,106 @@
-/* ===== GLOBAL ===== */
 body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: #f4f6f9;
-    color: #222;
-    line-height: 1.7;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+  color: white;
+  text-align: center;
 }
 
-/* ===== MAIN TITLE ===== */
+/* NAVIGATION */
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe66d;
+}
+
+/* PAGE CONTENT */
+.container {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* HEADINGS */
 h1 {
-    text-align: center;
-    background: #1f2a38;
-    color: white;
-    padding: 25px;
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: 1px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-/* ===== SECTIONS AS CARDS ===== */
-section {
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-/* ===== SUBHEADINGS ===== */
 h2 {
-    color: #1f2a38;
-    border-left: 5px solid #27ae60;
-    padding-left: 10px;
+  margin-top: 40px;
 }
 
-/* ===== TEXT ===== */
+/* PARAGRAPHS */
 p {
-    font-size: 1rem;
-    margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-/* Bible verse numbers */
-sup {
-    color: #27ae60;
-    font-weight: bold;
+/* BUTTONS */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff4d6d;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-/* Strong emphasis (Jeremiah verse) */
-strong {
-    color: #c0392b;
+button:hover {
+  transform: scale(1.05);
+  background: #ffe3ea;
 }
 
-/* ===== LINK BUTTON ===== */
-a {
-    display: inline-block;
-    text-decoration: none;
-    background: #27ae60;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    transition: 0.3s;
+/* GALLERY */
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 
-a:hover {
-    background: #219150;
+.gallery img:hover {
+  transform: scale(1.03);
+}
+/* HEARTS (animation) */
+
+.heart {
+  position: fixed;
+  top: -10px;
+  color: #ff4d6d;
+  font-size: 18px;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 9999;
 }
 
-/* ===== IMAGE ===== */
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
-
-/* ===== AUDIO & VIDEO ===== */
-audio, video {
-    display: block;
-    margin: 15px auto;
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+  font-size: 14px;
 }

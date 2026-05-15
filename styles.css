@@ -28,16 +28,30 @@ header h1 {
 
   font-size: 28px;
 }
-nav a {
+nav {
+  background: #222;
+  padding: 10px;
+}
+.active {
+  color: yellow;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-links a {
   color: white;
-
   text-decoration: none;
+  font-weight: bold;
+}
 
-  margin-left: 20px;
-
-  font-size: 18px;
-
-  transition: 0.3s;
+.nav-links a:hover {
+  color: cyan;
 }
 nav a:hover {
   color: #38bdf8;

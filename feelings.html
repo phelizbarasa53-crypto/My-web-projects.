@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How I Feel About You 💖</title>
+
+<meta name="description" content="A heartfelt website created with love, memories, and meaningful words.">
+
+<meta name="keywords" content="love, memories, romantic website, heartfelt message">
+
+<meta name="author" content="Pheliz">
+
+<meta property="og:title" content="For Someone Special ❤️">
+
+<meta property="og:description" content="A heartfelt website filled with emotions, memories, and love.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="photo1.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="feelings.html">My Feelings</a>
+    <a href="absence.html">When You're Away</a>
+    <a href="investment.html">My Effort</a>
+  </nav>
+
+  <div class="container">
+    <h1>How I Feel About You ❤️</h1>
+
+    <p>
+      I don’t always know how to fully explain it, but being around you changes how I feel about life.
+      You bring a kind of calm I can’t easily find anywhere else.
+    </p>
+
+    <p>
+      When I think of you, it’s not just attraction—it’s appreciation for who you are.
+      You matter to me more than words can easily explain.
+    </p>
+    <h2>Our Memories 📸</h2>
+
+<div class="gallery">
+  <img src="photo1.jpg">
+  <img src="photo2.png">
+  <img src="photo3.jpg">
+</div>
+<footer>
+  <p>Made with ❤️ just for you.</p>
+</footer>
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "❤️";
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+setInterval(createHeart, 300);
+</script>
+</body>
+</html>
